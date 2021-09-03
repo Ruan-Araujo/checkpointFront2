@@ -180,10 +180,10 @@ label[for="toggle"] {
 }
 
 #btn-close-form {
-   /*  color: var(--secondary-color);
+    color: var(--secondary-color);
     border: solid 1px var(--secondary-color);
-    background-color: var(--background-color); */
-    position: absolute;
+    background-color: var(--background-color);
+  /*   position: absolute;
     top: 10px;
     right: 400px;
     width: 50px;
@@ -194,7 +194,7 @@ label[for="toggle"] {
     color: white;
     cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
-    font-size: 1rem;
+    font-size: 1rem; */
 }
 
 .modal-btn button:hover,
