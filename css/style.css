@@ -10,7 +10,8 @@ html {
 
 :root {
     --primary-color: #2b2c34;
-    --secondary-color: #994ff3;
+    /* --secondary-color: #994ff3; */
+    --secondary-color: #3c5a14;
     --secondary-color-light: #d1d1e9;
     --tertiary-color: #e45858;
     --background-color: #f2eef5;
@@ -179,9 +180,21 @@ label[for="toggle"] {
 }
 
 #btn-close-form {
-    color: var(--secondary-color);
+   /*  color: var(--secondary-color);
     border: solid 1px var(--secondary-color);
-    background-color: var(--background-color);
+    background-color: var(--background-color); */
+    position: absolute;
+    top: 6px;
+    right: 350px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    font-size: 1rem;
 }
 
 .modal-btn button:hover,
@@ -476,6 +489,14 @@ footer {
     font-size: 1rem;
 }
 
+.fechar:hover{
+    color: var(--secondary-color);
+    background-color: var(--secondary-color-light);
+    border: none;
+    transform: scale(1.05);
+    transition: all .25s;
+}
+
 .formLog{
     display: flex;
     justify-content: center;
@@ -504,7 +525,7 @@ footer {
 }
 
 .button{
-    padding: 10px;
+    padding: 13px;
     background: var(--secondary-color);
     color: white;
     border-radius: 10%;
