@@ -1,13 +1,14 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Definindo o comportamento do scroll */
 html {
     scroll-behavior: smooth;
 }
-
+/* Definindo as váriaveis de cor */
 :root {
     --primary-color: #2b2c34;
     /* --secondary-color: #994ff3; */
@@ -15,9 +16,9 @@ html {
     --secondary-color-light: #d1d1e9;
     --tertiary-color: #e45858;
     --background-color: #f2eef5;
-    --filter: invert(30%) sepia(68%) saturate(1850%) hue-rotate(247deg) brightness(104%) contrast(91%);
+    --filter: invert(25%) sepia(76%) saturate(415%) hue-rotate(44deg) brightness(102%) contrast(96%);
 }
-
+/* Configurando o body */
 body {
     min-height: 100vh;
     background-color: var(--background-color);
@@ -40,6 +41,7 @@ nav {
     top: 0;
     z-index: 1;
     transition: all .5s ease;
+    /* Estilizando o menu de navegação */
 }
 
 #logo {
@@ -48,17 +50,19 @@ nav {
     font-weight: 700;
     margin-left: 6rem;
 }
-
+/* Aplicando medidas na img do logo */
 #logo img {
     height: 2rem;
     margin: 0 .25rem .5rem 0;
 }
 
 #logo img:hover {
+    /* Animação do bug */
     animation: bounce .5s infinite;
 }
 
 #logo:hover {
+    /* A propriedade filter aplica elementos gráficos */
     filter: var(--filter);
     cursor: pointer;
 }
@@ -94,7 +98,7 @@ label[for="toggle"] {
 }
 
 /* ============ FORM MODAL ============ */
-
+/* Estilizando o modal - display none para ele não aparecer na tela */
 #form-modal {
     display: none;
     align-items: center;
@@ -117,6 +121,7 @@ label[for="toggle"] {
     min-height: 300px;
     border-radius: .5rem;
     animation: modal .5s;
+    /* Glassmorphism */
     background: rgba(255, 255, 255, .1);
     box-shadow: 20px 20px 30px rgba(0, 0, 0, .5);
     border-top: 1px solid rgba(255, 255, 255, .5);
@@ -184,9 +189,6 @@ label[for="toggle"] {
 }
 
 #btn-close-form {
-    /* color: var(--secondary-color);
-    border: solid 1px var(--secondary-color);
-    background-color: var(--background-color); */
     position: relative;
     top: -442px;
     right: -85px;
@@ -208,7 +210,6 @@ label[for="toggle"] {
     border: none;
     transform: scale(1.05);
 }
-
 
 
 /* ============ CARDS SECTION ============ */
@@ -471,6 +472,7 @@ footer {
     position: relative;
     padding: 40px;
     border-radius: 0.5%;
+    /* Glassmorphism */
     background: rgba(255, 255, 255, .1);
     box-shadow: 20px 20px 30px rgba(0, 0, 0, .5);
     border-top: 1px solid rgba(255, 255, 255, .5);

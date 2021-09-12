@@ -1,3 +1,4 @@
+/* Arquivo js principal - onde todos os outros serão importados */
 import { openForm, closeForm, openLogin, closeLogin } from "./openCloseForms.js"
 import removeCard from "./removeCard.js"
 import { lightMode, darkMode } from "./toggle.js";
